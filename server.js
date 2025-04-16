@@ -10,7 +10,7 @@ app.use(cors());
 const DB_PATH = path.join(__dirname, 'songs.sqlite');
 const db = new sqlite3.Database(DB_PATH);
 
-app.get('/api/search', (req, res) => {
+app.get('/api/test', (req, res) => {
   const q = req.query.q || "";
   db.all(
     `SELECT 
